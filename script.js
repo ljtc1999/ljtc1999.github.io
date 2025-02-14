@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check for saved mode preference
     if (localStorage.getItem("dark-mode") === "enabled") {
         body.classList.add("dark-mode");
-        toggleButton.textContent = "☀️ Toggle Light Mode";
+        toggleButton.textContent = "Toggle Light Mode";
     }
 
     // Toggle dark mode
@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (body.classList.contains("dark-mode")) {
             localStorage.setItem("dark-mode", "enabled");
-            toggleButton.textContent = "☀️ Toggle Light Mode";
+            toggleButton.textContent = "Toggle Light Mode";
         } else {
             localStorage.setItem("dark-mode", "disabled");
-            toggleButton.textContent = "🌙 Toggle Dark Mode";
+            toggleButton.textContent = "Toggle Dark Mode";
         }
     });
 });
